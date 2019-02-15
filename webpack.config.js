@@ -20,7 +20,7 @@ module.exports = env => {
       historyApiFallback: true,
       publicPath: "/dist/"
     },
-    entry: "./src/app.js",
+    entry: ['babel-polyfill',"./src/app.js"],
     mode: "development",
     module: {
       rules: [
